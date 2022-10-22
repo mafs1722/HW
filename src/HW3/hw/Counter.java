@@ -1,7 +1,7 @@
 package HW3.hw;
 
-public interface Counter<month> {
-    String report();
+public interface Counter {
+    String report(int monthCount);
 
 }
 

@@ -3,8 +3,13 @@ package HW3.hw;
 public class Main {
     public static void main(String[] args) {
         Director director = new Director();
-
-        System.out.println(director.counter);
+        director.force(3, new Counter() {
+            @Override
+            public String report(int monthCount) {
+                return "I created report for " + monthCount;
+            }
+        });
+//        System.out.println(director.counter);
 
     }
 }

@@ -4,8 +4,11 @@ public class Director {
     int month;
     Counter counter;
 
+    public void force(int monthCounter, Counter counter){
+        counter.report(monthCounter);
 
-//    1 <= month <= 12
+    }
+
 
     public Counter getCounter() {
         return counter;
@@ -17,7 +20,6 @@ public class Director {
 
 
 }
-
 
 /**
     Создать класс директор у которого один метод force, который в качестве
